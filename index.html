@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius Generator</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Border Radius Generator</h2>
+        <div class="container">
+            <div class="box" id="box"></div>
+            <div class="controls">
+                <!-- Four slider for each corner -->
+                <div class="slider-container">
+                    <label>Top Left:</label>
+                    <input type="range" id="tl" min="0" max="100" value="0" oninput="updateBorderRadius()">
+                    <span id="tlValue">0</span>
+                </div>
+                <!-- Repeat for other corners -->
+                <div class="slider-container">
+                    <label>Top Right:</label>
+                    <input type="range" id="tr" min="0" max="100" value="0" oninput="updateBorderRadius()">
+                    <span id="trValue">0</span>
+                </div>
+
+                <div class="slider-container">
+                    <label>Bottom Left:</label>
+                    <input type="range" id="bl" min="0" max="100" value="0" oninput="updateBorderRadius()">
+                    <span id="blValue">0</span>
+                </div>
+
+                <div class="slider-container">
+                    <label>Bottom Right:</label>
+                    <input type="range" id="br" min="0" max="100" value="0" oninput="updateBorderRadius()">
+                    <span id="brValue">0</span>
+                </div>
+            </div>
+            <!-- CSS Output  -->
+            <div class="code" id="code">border-radius: 0px 0px 0px 0px;</div>
+            <button onclick="copyCode()">Copy CSS</button>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
