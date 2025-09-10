@@ -3,7 +3,7 @@ function updateBorderRadius(){
     let tr = document.getElementById("tr").value;
     let bl = document.getElementById("bl").value;
     let br = document.getElementById("br").value;
-
+    
     document.getElementById("tlValue").textContent = tl;
     document.getElementById("trValue").textContent = tr;
     document.getElementById("blValue").textContent = bl;
